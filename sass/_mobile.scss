@@ -3,6 +3,264 @@
 
 
 //styles for custom device width
+@include mq($max-width: 1200px) {
+  .container, .top_form .container{
+  	width: auto;
+  	padding-left: 5px;
+  	padding-right: 5px;
+  }
+  	.tab_text{
+  		float: none;
+  		width: 100%;
+  		padding-bottom: 40px
+  	}
+  	.project{
+  		box-sizing: border-box;
+  		width: 23%;
+  	}
+  	.project_result figure{
+  		img{
+  			display: block;
+  		}
+  	}
+  	.service_img{
+  		text-align: center;
+  		float: none;
+  	}
+  	.instaled_item{
+  		margin: 0 0 30px 0;
+  	}
+
+  	.sert a{
+  		width: 20%;
+  		img{
+  			width: 100%;
+  		}
+  	}
+  	.directors_block {
+  		text-align: center;
+  		float: none;
+  		width: 100%;
+  		.project{
+  			margin-bottom: 20px;
+  		}
+  	}
+  	.map_wrap .container{
+  		text-align: center;
+  	}
+}
+
 @include mq($max-width: 1000px) {
-  
+	.head_block article{
+		padding-left: 0;
+	}
+	.top_form_block small{
+		display: block;
+		width: 100%;
+		padding: 20px 0 0 0;
+	}
+	.tabs li a{
+		margin: 0;
+	}
+	.tabs li a em{
+		height: auto;
+		font-size: 13px;
+		padding-bottom: 10px;
+	}
+	.tab_item{
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 20px;
+	}
+	.tab, .top_form_block, .top_form h2{
+		text-align: center;
+	}
+	.project_result figure, .project{
+		vertical-align: top;
+	}
+	.service_block ul{
+		margin: auto;
+		width: 50%;
+	}
+	.tab_text h6{
+		text-align: center;
+	}
+	.foot_top .logo{
+		left: 0;
+	}
+}
+
+@include mq($max-width: 768px) {
+	.project{
+		width: 45%;
+	}
+	.install .project_result figure{
+		display: block;
+		text-align: center;
+		padding-bottom: 15px;
+		img{
+			margin: auto;
+		}
+	}
+	.title{
+		text-align: center;
+		&:before{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.top_form_block .button{
+		width: 200px;
+	}
+}
+
+@include mq($max-width: 700px) {
+	.head_line{
+		height: auto;
+		padding: 10px 0;
+		.logo{
+			text-align: center;
+			position: static;
+			display: block;
+		}
+	}
+	.contacts_head{
+		padding-left: 0;
+		text-align: center;
+	}
+	.menu{
+		text-align: center;
+	}
+	.sheme figure{
+		width: 50%;
+		text-align: center;
+		&:before{
+			display: none;
+		}
+		figcaption, img{
+			margin: 10px auto;
+		}
+	}
+	.partners figure a{
+		width: 20%;
+	}
+	.sert a{
+		width: 40%;
+	}
+	.foot_top .logo{
+		display: none;
+	}
+}
+
+@include mq($max-width: 600px) {
+	.head_block article{
+		width: auto;
+		padding: 30px 0 0 0;
+	}
+	.foot_menu, .foot_top .contacts_head, .foot_bottom address, .foot_bottom strong{
+		width: 100%;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.modal_form{
+		width: auto;
+	}
+	.modal_form{
+		padding: 20px;
+	}
+}
+
+@include mq($max-width: 500px) {
+	.partners figure a{
+		width: 33%;
+	}
+	.button_item{
+		margin: 20px 0 0 0;
+	}
+	.instaled_item{
+		width: 100%;
+		img{
+			width: 100%;
+		}
+		figure{
+			height: auto;
+			figcaption{
+				height: auto;
+				padding: 10px 0;
+				line-height: 1.2;
+			}
+		}
+	}
+	.modal_form .button_item .button{
+		width: 226px;
+	}
+	.modal_form input{
+		font-size: 14px;
+	}
+}
+
+@include mq($max-width: 440px) {
+	.menu li a{
+		font-size: 11px;
+	}
+	.contacts_head a, .contacts_head span{
+		margin-left: 18px;
+		position: relative;
+		left: -1px;
+		border: none;
+	}
+	.head_block article h3{
+		font-size: 18px;
+	}
+	.head_block article{
+		font-size: 14px;
+	}
+	.tabs li a{
+		top: 0
+	}
+	.tabs li{
+		width: 50%;
+	}
+	.tabs{
+		height: auto;
+	}
+	.project_block{
+		margin: 0;
+		.project{
+			width: 100%;
+			margin: 0 0 30px 0;
+		}
+	}
+	.project_result figure{
+		width: 50%;
+		padding-bottom: 20px;
+	}
+	.service_block ul{
+		width: 90%;
+	}
+	.service_img img{
+		max-width: 100%
+	}
+	.title{
+		font-size: 28px;
+	}
+	.partners figure a{
+		width: 50%;
+	}
+	.sert a{
+		width: 90%;
+	}
+	.directors_block .project{
+		width: 90%;
+		margin-left: 0;
+	}
+	.menu li{
+		margin: 0 4px
+	}
+
+	input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea{
+		width: 100%;
+	}
 }
