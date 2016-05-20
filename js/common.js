@@ -8,11 +8,12 @@ $(document).ready(function() {
 		}
 	});
 	
-	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
-	});
+	//tabs
+	$('.tabs li a').click(function(event){
+        event.preventDefault();
+        $('.tabs li a').removeClass('active');
+        $(this).addClass('active');
+        $('.tab').hide();
+        $($(this).attr('href')).show();
+    });
 });
