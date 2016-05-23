@@ -331,6 +331,10 @@
 						margin: 0 auto;
 						display: block;
 						margin-top: 30px;
+						&:hover{
+							color: #447fc1;
+							background:#fff;
+						}
 					}
 				}
 
@@ -427,6 +431,12 @@
 					color: #447fc1;
 					font-size: 18px;
 					font-weight: normal;
+					a{
+						text-decoration: none;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
 				}
 			}
 		}
@@ -701,6 +711,12 @@
 			}
 		}
 	}
+
+.totop{
+	position: absolute;
+	right: 0%;
+	top: 30px;
+}
 
 /*----------end footer----------*/
 

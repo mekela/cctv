@@ -18,7 +18,7 @@
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 			<script src="js/jquery.fancybox.pack.js"></script>
 			<script src="js/modernizr.custom.js"></script>
-			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/maskedinput.js"></script>
 			<script src="js/common.js"></script>
 			<!--[if IE]>  
 				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
@@ -26,7 +26,7 @@
 		<!-- END OF SCRIPT -->
 	</head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="wrapper">
 <!--header-->
 <header class="header">
 	<div class="head_line">
@@ -64,7 +64,7 @@
 		<div class="container">
 			<h2>Спроектируем, установим видеонаблюдение и научим пользоваться! <br> Получите расчет Вашего заказа:</h2>
 			<div class="top_form_block">
-				<input type="text" placeholder="Введите номер телефона">
+				<input type="tel" placeholder="Введите номер телефона">
 				<div class="button_item"><input type="submit" value="Получить расчет" class="button"></div>
 				<small>С Вами свяжется специалист по работе с клиентами для уточнения деталей заказа</small>
 			</div>
@@ -143,7 +143,7 @@
 		 				</p>
 		 				<div class="top_form_block">
 		 					<h2>Не подошел ни один вариант - оставьте заявку и получите бесплатный индивидуальный расчет для Вашего объекта</h2>
-							<input type="text" placeholder="Введите номер телефона">
+							<input type="tel" placeholder="Введите номер телефона">
 							<div class="button_item"><input type="submit" value="Заказать расчет" class="button"></div>
 						</div>
 		 			</div>
@@ -173,7 +173,7 @@
 		 				</p>
 		 				<div class="top_form_block">
 		 					<h2>Не подошел ни один вариант - оставьте заявку и получите бесплатный индивидуальный расчет для Вашего объекта</h2>
-							<input type="text" placeholder="Введите номер телефона">
+							<input type="tel" placeholder="Введите номер телефона">
 							<div class="button_item"><input type="submit" value="Заказать расчет" class="button"></div>
 						</div>
 		 			</div>
@@ -203,7 +203,7 @@
 		 				</p>
 		 				<div class="top_form_block">
 		 					<h2>Не подошел ни один вариант - оставьте заявку и получите бесплатный индивидуальный расчет для Вашего объекта</h2>
-							<input type="text" placeholder="Введите номер телефона">
+							<input type="tel" placeholder="Введите номер телефона">
 							<div class="button_item"><input type="submit" value="Заказать расчет" class="button"></div>
 						</div>
 		 			</div>
@@ -267,7 +267,7 @@
 			<div class="top_form_block">
 				<h2>Получите бесплатный выезд специалиста
 				и смету по Вашему объекту:</h2>
-				<input type="text" placeholder="Введите номер телефона">
+				<input type="tel" placeholder="Введите номер телефона">
 				<div class="button_item"><input type="submit" value="Заказать расчет" class="button"></div>
 				<small>С Вами свяжется специалист по работе с клиентами для уточнения деталей заказа</small>
 			</div>
@@ -278,9 +278,9 @@
 		<div class="title">Проектирование</div>
 		<div class="project_block">
 			<div class="project">
-				<img src="img/project1.jpg" alt="">
+				<a href="#"><img src="img/project1.jpg" alt=""></a>
 				<section>
-					<strong>Проектирование</strong>
+					<strong><a href="#">Проектирование</a></strong>
 					<p>Подбор всех компонентов видеонаблюдения.   
 					Заказчика информируют обо всех «+» и «-» каждого компонента. Уточнение мест размещения камер и расположения регистратора. 
 					Согласование.</p>
@@ -289,7 +289,7 @@
 			<div class="project">
 				<img src="img/project2.png" alt="">
 				<section>
-					<strong>Проектирование</strong>
+					<strong><a href="#">Проектирование</a></strong>
 					<p>Подбор всех компонентов видеонаблюдения.   
 					Заказчика информируют обо всех «+» и «-» каждого компонента. Уточнение мест размещения камер и расположения регистратора. 
 					Согласование.</p>
@@ -298,7 +298,7 @@
 			<div class="project">
 				<img src="img/project3.png" alt="">
 				<section>
-					<strong>Проектирование</strong>
+					<strong><a href="#">Проектирование</a></strong>
 					<p>Подбор всех компонентов видеонаблюдения.   
 					Заказчика информируют обо всех «+» и «-» каждого компонента. Уточнение мест размещения камер и расположения регистратора. 
 					Согласование.</p>
@@ -307,7 +307,7 @@
 			<div class="project">
 				<img src="img/project4.png" alt="">
 				<section>
-					<strong>Проектирование</strong>
+					<strong><a href="#">Проектирование</a></strong>
 					<p>Подбор всех компонентов видеонаблюдения.   
 					Заказчика информируют обо всех «+» и «-» каждого компонента. Уточнение мест размещения камер и расположения регистратора. 
 					Согласование.</p>
@@ -406,7 +406,7 @@
  				</ul>
  				<div class="top_form_block">
  					<h2>Анонимный пароль от системы видеонаблюдения! <br> Если что-то пошло не так, быстро устраним <br> неполадки за свой счет!</h2>
-					<input type="text" placeholder="Введите номер телефона">
+					<input type="tel" placeholder="Введите номер телефона">
 					<div class="button_item"><input type="submit" value="Заказать расчет" class="button"></div>
 				</div>
  			</div>
@@ -579,6 +579,9 @@
 			</nav>
 			<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
 		</div>
+		<a href="#wrapper" class="totop">
+			<img src="img/totop.png" alt="">
+		</a>
 	</div>
 	<div class="foot_bottom">
 		<div class="container">
@@ -586,6 +589,7 @@
 			<strong>2016 © Сделано в <a href="#">Direct for Business</a></strong>
 		</div>
 	</div>
+	
 </footer>
 <!--end-footer-->
 
@@ -595,7 +599,7 @@
 	<div class="modal_form">
 		<h6>Оставьте свой номер телефона, в течение 5 минут с Вами свяжется специалист для подтверждения заказа и уточнения деталей</h6>
 		<form action="#">
-			<input type="text" placeholder="Введите номер телефона">
+			<input type="tel" placeholder="Введите номер телефона">
 			<div class="button_item"><input type="submit" value="Заказать" class="button"></div>
 		</form>
 	</div>

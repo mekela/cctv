@@ -492,6 +492,9 @@ textarea {
     margin: 0 auto;
     display: block;
     margin-top: 30px; }
+    .tab_item .button:hover {
+      color: #447fc1;
+      background: #fff; }
 
 .sheme_wrap {
   position: relative;
@@ -581,6 +584,10 @@ textarea {
       color: #447fc1;
       font-size: 18px;
       font-weight: normal; }
+      .project section strong a {
+        text-decoration: none; }
+        .project section strong a:hover {
+          text-decoration: underline; }
 
 .project_result {
   font-size: 0;
@@ -832,6 +839,11 @@ textarea {
       .foot_bottom strong a:hover {
         text-decoration: underline; }
 
+.totop {
+  position: absolute;
+  right: 0%;
+  top: 30px; }
+
 /*----------end footer----------*/
 /*----------modal----------*/
 .fancybox-close {
@@ -872,6 +884,8 @@ textarea {
     width: auto;
     padding-left: 5px;
     padding-right: 5px; }
+  .totop {
+    display: none; }
   .tab_text {
     float: none;
     width: 100%;
