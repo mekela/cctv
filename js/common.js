@@ -12,9 +12,9 @@ $(document).ready(function() {
 	$("[type='tel'").mask("+7 (999) 999-9999");
 	
 	//tabs
-	$('.tabs li a').click(function(event){
+	$('.tabs_new li a').click(function(event){
         event.preventDefault();
-        $('.tabs li a').removeClass('active');
+        $('.tabs_new li a').removeClass('active');
         $(this).addClass('active');
         $('.tab').hide();
         $($(this).attr('href')).show();

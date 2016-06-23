@@ -879,6 +879,186 @@ textarea {
   background: rgba(60, 163, 222, 0.5); }
 
 /*----------end modal----------*/
+/*-------tab--------*/
+.list_of_tabs {
+  float: left;
+  width: 308px;
+  margin-right: 10px;
+  margin-bottom: 41px;
+  border: 1px solid #3ba5e0;
+  background-color: #f1f1f5; }
+  .list_of_tabs h6 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #447fc1;
+    padding: 10px; }
+  .list_of_tabs .tabs_new li {
+    display: block; }
+    .list_of_tabs .tabs_new li:nth-child(odd) {
+      background: #fff; }
+    .list_of_tabs .tabs_new li a {
+      display: block;
+      padding: 10px 0 10px 10px;
+      color: #353b4b;
+      font-size: 18px;
+      text-decoration: none;
+      position: relative; }
+      .list_of_tabs .tabs_new li a:before {
+        content: '';
+        position: absolute;
+        top: 19px;
+        left: 11px;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 4px 0 4px 8px;
+        border-color: transparent transparent transparent #cccccc; }
+      .list_of_tabs .tabs_new li a.active, .list_of_tabs .tabs_new li a:hover {
+        color: #447fc1; }
+        .list_of_tabs .tabs_new li a.active strong, .list_of_tabs .tabs_new li a:hover strong {
+          border-color: #447fc1; }
+        .list_of_tabs .tabs_new li a.active:before, .list_of_tabs .tabs_new li a:hover:before {
+          border-left-color: #447fc1; }
+    .list_of_tabs .tabs_new li strong {
+      margin-left: 18px;
+      font-weight: normal;
+      border-bottom: 1px dashed #353b4b; }
+
+.tabs_wrap {
+  padding-bottom: 50px; }
+
+.new_tab_wrap {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #3ba5e0;
+  background-color: #fff;
+  padding: 0 10px; }
+  .new_tab_wrap h3 {
+    font-size: 24px;
+    color: #447fc1;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 14px; }
+  .new_tab_wrap .top_form_block {
+    float: left;
+    width: 540px;
+    padding: 0 18px 0 0; }
+    .new_tab_wrap .top_form_block .button {
+      width: 280px; }
+    .new_tab_wrap .top_form_block input {
+      width: 220px; }
+
+.new_tab_price {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #cccccc;
+  padding: 12px 0 0 0;
+  text-align: right; }
+  .new_tab_price > div {
+    padding-bottom: 12px; }
+  .new_tab_price .red {
+    color: #c14444; }
+  .new_tab_price .blue {
+    color: #447fc1; }
+  .new_tab_price em {
+    display: block;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    font-style: normal; }
+  .new_tab_price strong {
+    font-weight: 300;
+    font-size: 30px; }
+    .new_tab_price strong small {
+      color: #353b4b;
+      font-size: 18px; }
+
+.new_tab_harac {
+  position: relative;
+  overflow: hidden; }
+  .new_tab_harac > img {
+    float: left;
+    border: 1px solid #cccccc; }
+  .new_tab_harac section {
+    padding: 0 0 0 20px;
+    position: relative;
+    overflow: hidden; }
+    .new_tab_harac section h4 {
+      font-weight: bold;
+      color: #447fc1;
+      font-size: 18px; }
+    .new_tab_harac section li {
+      font-weight: 300;
+      font-size: 16px;
+      color: #353b4b;
+      line-height: 30px; }
+
+/*-------tab--------*/
+.economy_wrap {
+  position: relative;
+  overflow: hidden;
+  background: #f1f2f6; }
+  .economy_wrap .top_form_block {
+    float: left;
+    width: auto;
+    padding: 0 18px 0 0; }
+    .economy_wrap .top_form_block .button {
+      width: 280px;
+      margin: 0; }
+    .economy_wrap .top_form_block input {
+      margin-right: 14px;
+      width: 220px; }
+
+.economy_block {
+  position: relative;
+  overflow: hidden;
+  width: 1159px;
+  height: 438px;
+  margin: 25px auto;
+  background: transparent url("../img/form_bg.png") center no-repeat; }
+  .economy_block .container {
+    width: 870px;
+    margin-top: 19px; }
+  .economy_block h2 {
+    font-size: 24px;
+    color: #353b4b; }
+
+.economy_box {
+  padding: 20px 0 0 0;
+  position: relative;
+  overflow: hidden; }
+  .economy_box section {
+    width: 535px;
+    float: left;
+    color: #353b4b;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 20px;
+    line-height: 25px; }
+    .economy_box section p {
+      padding-bottom: 17px;
+      background: url(../img/form_line.png) no-repeat bottom; }
+    .economy_box section h2 {
+      font-size: 20px;
+      color: #447fc1;
+      padding: 19px  0; }
+  .economy_box ul {
+    overflow: hidden;
+    font-size: 18px;
+    color: #353b4b; }
+    .economy_box ul li {
+      height: 65px;
+      display: block;
+      padding-left: 77px;
+      position: relative; }
+      .economy_box ul li img {
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .economy_box ul li span {
+        padding-top: 6px;
+        display: inline-block; }
+
 @media only screen and (max-width: 1200px) {
   .container, .top_form .container {
     width: auto;
